@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dettagli Competizione Fantamattone">
+    <meta name="theme-color" content="#111827">
+    <title>Competizione Fantamattone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
+</head>
+<body>
+    <div class="container">        
+        <main class="albo-container competition-detail-container">
+            <div class="albo-header">
+                <div class="back-link">
+                    <a href="index.html">← Torna all'Albo d'Oro</a>
+                </div>
+            </div>
+            <div id="competition-content" aria-live="polite">
+                <div class="competition-header">
+                    <div class="competition-trophy-container">
+                        <img id="competition-trophy" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ0cmFuc3BhcmVudCIvPgo8L3N2Zz4K" alt="Trofeo" class="competition-trophy-image">
+                    </div>
+                    <div class="competition-info">
+                        <h3 id="competition-title"></h3>
+                        <p id="competition-season" class="competition-season"></p>
+                    </div>
+                </div>
+                
+                <div class="competition-details">
+                    <div class="competition-results">
+                        <h3>Risultati</h3>
+                        <div id="competition-results-list" class="results-list">
+                            <p class="loading-message">Caricamento dati...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="competition-standings">
+                        <div id="standings-container" class="standings-container">
+                            <div class="standings-placeholder">
+                                <p>Spazio riservato per l'immagine della classifica</p>
+                                <div class="standings-upload-info">
+                                    <small>Qui verrà caricata l'immagine della classifica finale di questa stagione</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="competition.js" defer></script>
+</body>
+</html> 

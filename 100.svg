@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="26.124382"
+   height="26.124384"
+   viewBox="0 0 26.124382 26.124384"
+   version="1.1"
+   id="svg1512"
+   sodipodi:docname="100.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1516" />
+  <sodipodi:namedview
+     id="namedview1514"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="17.979167"
+     inkscape:cx="8.5654693"
+     inkscape:cy="14.294322"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g5857">
+    <sodipodi:guide
+       position="-10.743137,37.089996"
+       orientation="0,48"
+       id="guide1635"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="37.256863,37.089996"
+       orientation="48,0"
+       id="guide1637"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="37.256863,-10.910004"
+       orientation="0,-48"
+       id="guide1639"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-10.743137,-10.910004"
+       orientation="-48,0"
+       id="guide1641"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,26.124384"
+       orientation="0,26.124382"
+       id="guide2489"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="26.124382,26.124384"
+       orientation="26.124384,0"
+       id="guide2491"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="26.124382,0"
+       orientation="0,-26.124382"
+       id="guide2493"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-26.124384,0"
+       id="guide2495"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <ellipse
+     style="fill:#ffffff;fill-opacity:1;paint-order:fill markers stroke"
+     id="path308"
+     cx="15.70573"
+     cy="13.839704"
+     transform="matrix(1.1865443,0,0,1.1865443,-5.5733513,-3.3592246)"
+     rx="10.107649"
+     ry="10.169849" />
+  <g
+     id="layer1"
+     transform="matrix(3.7795276,0,0,3.7795276,717.86358,-171.27224)">
+    <g
+       id="g5857"
+       transform="matrix(0.19507172,0,0,0.19507172,-249.99334,71.3614)">
+      <g
+         id="g5851"
+         transform="matrix(0.22771667,0,0,0.22771667,43.692667,-15.169106)"
+         style="fill:#96242f;fill-opacity:1">
+        <path
+           style="color:#000000;fill:#96242f;fill-opacity:1;paint-order:stroke fill markers"
+           d="m 1237.959,-519.7207 c -42.8905,0 -77.8027,34.91225 -77.8027,77.80273 0,42.89049 34.9122,77.80078 77.8027,77.80078 42.8905,0 77.8008,-34.91029 77.8008,-77.80078 0,-42.89048 -34.9103,-77.80273 -77.8008,-77.80273 z m 0,13.17383 c 35.7706,0 64.6269,28.85831 64.6269,64.6289 0,35.77059 -28.8563,64.62695 -64.6269,64.62695 -35.7706,0 -64.627,-28.85636 -64.627,-64.62695 0,-35.77059 28.8564,-64.6289 64.627,-64.6289 z"
+           id="path5849" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;line-height:1.25;font-family:'Tannenberg Fett';-inkscape-font-specification:'Tannenberg Fett';letter-spacing:-5.9341px;word-spacing:0px;fill:#96242f"
+         x="1250.8552"
+         y="-384.45404"
+         id="text5855"
+         transform="matrix(0.23262542,0,0,0.23262542,21.669095,-19.060869)"><tspan
+           id="tspan5853"
+           x="1250.8552"
+           y="-384.45404"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Tannenberg Fett';-inkscape-font-specification:'Tannenberg Fett';fill:#96242f"
+           dx="0 0.66010898 2.3103814">100</tspan></text>
+    </g>
+  </g>
+</svg>
