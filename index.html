@@ -9,36 +9,12 @@
     <title>Albo Fantamattone</title>
     <base href="/albo-d-oro-fantamattone/" />
     
-    <script type="text/javascript">
-        // Single Page Apps for GitHub Pages
-        // MIT License
-        // https://github.com/rafgraph/spa-github-pages
-        // This script checks to see if a redirect is present in the query string,
-        // converts it back into the correct url and adds it to the
-        // browser's history using window.history.replaceState(...),
-        // which won't cause the browser to attempt to load the new url.
-        // When the single page app is loaded further down in this file,
-        // the correct url will be waiting in the browser's history for
-        // the single page app to route accordingly.
-        (function(l) {
-            if (l.search[1] === '/' ) {
-                var decoded = l.search.slice(1).split('&').map(function(s) { 
-                    return s.replace(/~and~/g, '&')
-                }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
-                );
-            }
-        }(window.location))
-    </script>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/legacy.css" />
     
     <link href="manifest.webmanifest" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
@@ -121,23 +97,50 @@
 
 <body>
     <div id="app">
-        <div class="loading-screen">
-            <div class="loading-logo">🏆</div>
-            <div class="loading-text">Albo Fantamattone</div>
-            <div class="loading-bar">
-                <div class="loading-bar-fill"></div>
-            </div>
+        <div class="app-shell">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <a class="navbar-brand" href="/">
+                        <span class="brand-icon">🏆</span>
+                        <span class="brand-text">Albo d'Oro Fantamattone</span>
+                    </a>
+
+                    <button class="mobile-toggle" aria-label="Menu">
+                        <span class="hamburger"></span>
+                    </button>
+
+                    <div class="navbar-menu">
+                        <a class="nav-link" href="/" data-route="/">Albo</a>
+                        <a class="nav-link" href="/stagioni" data-route="/stagioni">Stagioni</a>
+                        <a class="nav-link" href="/competizioni" data-route="/competizioni">Competizioni</a>
+                        <a class="nav-link" href="/squadre" data-route="/squadre">Squadre</a>
+                        <a class="nav-link" href="/badges" data-route="/badges">Badge</a>
+                    </div>
+
+                    <button class="theme-toggle" title="Cambia tema">
+                        <span class="theme-dot"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <main class="main-content">
+                <div class="page-container">
+                    <div id="page-content">
+                        <div class="loading-screen">
+                            <div class="loading-logo">🏆</div>
+                            <div class="loading-text">Albo Fantamattone</div>
+                            <div class="loading-bar">
+                                <div class="loading-bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
 
-    <div id="blazor-error-ui">
-        Si è verificato un errore.
-        <a href="" class="reload">Ricarica</a>
-        <a class="dismiss">🗙</a>
-    </div>
-    
-    <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src="app.js"></script>
 </body>
 
 </html>
+
