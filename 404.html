@@ -122,7 +122,18 @@
             var search = window.location.search;
             var hash = window.location.hash;
             
-            // Se il percorso non è già index.html o root, reindirizza
+            // Se il percorso non inizia con basePath, aggiungilo
+            if (!path.startsWith(basePath)) {
+                // Se il percorso è root o vuoto, reindirizza al basePath
+                if (path === '/' || path === '') {
+                    window.location.replace(basePath + '/' + search + hash);
+                    return;
+                }
+                // Altrimenti aggiungi basePath al percorso
+                path = basePath + path;
+            }
+            
+            // Se il percorso non è già index.html o root del basePath, reindirizza
             if (path !== basePath + '/index.html' && path !== basePath + '/') {
                 // Estrai il percorso relativo (rimuovi basePath)
                 var relativePath = path.replace(basePath, '') || '/';
