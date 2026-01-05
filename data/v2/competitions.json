@@ -1,0 +1,61 @@
+{
+  "competitions": [
+    {
+      "key": "campionato",
+      "nome": "Fantamattone",
+      "tipo": "Campionato",
+      "descrizione": "Il torneo principale della lega mattonisti",
+      "iconaVincitoreSvgPath": "svg/scudetto.svg",
+      "iconaSecondoSvgPath": "svg/scudetto2.svg",
+      "iconaTerzoSvgPath": "svg/scudetto3.svg"
+    },
+    {
+      "key": "apertura",
+      "nome": "Torneo Apertura Fantamattone",
+      "tipo": "Campionato",
+      "descrizione": "Il torneo apertura del Fantamattone (solo due edizioni)",
+      "iconaVincitoreSvgPath": "svg/apertura.svg",
+      "iconaSecondoSvgPath": "svg/apertura2.svg",
+      "iconaTerzoSvgPath": "svg/apertura3.svg"
+    },
+    {
+      "key": "clausura",
+      "nome": "Torneo Clausura Fantamattone",
+      "tipo": "Campionato",
+      "descrizione": "Il torneo clausura del Fantamattone (solo due edizioni)",
+      "iconaVincitoreSvgPath": "svg/clausura.svg",
+      "iconaSecondoSvgPath": "svg/clausura2.svg",
+      "iconaTerzoSvgPath": "svg/clausura3.svg"
+    },
+    {
+      "key": "memorial",
+      "nome": "Memorial il Grande Monarca",
+      "tipo": "Coppa",
+      "descrizione": "Torneo in memoria del Grande Monarca, in formato gironi e fase a eliminazione diretta",
+      "iconaVincitoreSvgPath": "svg/memorial.svg",
+      "iconaSecondoSvgPath": "svg/finalista_memorial.svg",
+      "iconaTerzoSvgPath": ""
+    },
+    {
+      "key": "latrina",
+      "nome": "Coppa Latrina",
+      "tipo": "Coppa",
+      "descrizione": "La Coppa sponsorizzata dalla pizzeria Bella Posillipo di Gennaro Latrina",
+      "iconaVincitoreSvgPath": "svg/latrina.svg",
+      "iconaSecondoSvgPath": "svg/finalista_latrina.svg",
+      "iconaTerzoSvgPath": ""
+    },
+    {
+      "key": "moncada",
+      "nome": "Supercoppa Moncada",
+      "tipo": "Coppa",
+      "descrizione": "Supercoppa di inizio stagione dove i giocatori di colore sono i protagonisti",
+      "iconaVincitoreSvgPath": "svg/supercoppamoncada.svg",
+      "iconaSecondoSvgPath": "svg/finalistasupercoppamoncada.svg",
+      "iconaTerzoSvgPath": ""
+    }
+
+  ]
+}
+
+

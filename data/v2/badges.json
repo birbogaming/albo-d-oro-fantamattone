@@ -1,0 +1,54 @@
+{
+  "badges": [
+    {
+      "chiave": "OG",
+      "nome": "OG",
+      "descrizione": "Badge assegnato alle squadre che hanno partecipato alla prima edizione del Fantamattone.",
+      "iconaSvgPath": "svg/og.svg",
+      "colorePrimarioHex": "#8b5cf6",
+      "coloreSecondarioHex": "#ffffff"
+    },
+    {
+      "chiave": "CENTO",
+      "nome": "CENTO",
+      "descrizione": "Badge assegnato alle squadre che hanno disputato almeno 100 partite di campionato.",
+      "iconaSvgPath": "svg/100.svg",
+      "colorePrimarioHex": "#f59e0b",
+      "coloreSecondarioHex": "#111827"
+    },
+    {
+      "chiave": "CAMICIA",
+      "nome": "CAMICIA NERA",
+      "descrizione": "Badge assegnato alle squadre arrivate in ultima posizione in un'edizione del Fantamattone.",
+      "iconaSvgPath": "svg/camicia.svg",
+      "colorePrimarioHex": "#111827",
+      "coloreSecondarioHex": "#ffffff"
+    },
+    {
+      "chiave": "UGANDA",
+      "nome": "FANTAUGANDA",
+      "descrizione": "Badge assegnato alle squadre che hanno partecipato al fantacalcio del campionato ugandese.",
+      "iconaSvgPath": "svg/uganda.svg",
+      "colorePrimarioHex": "#f97316",
+      "coloreSecondarioHex": "#ffffff"
+    },
+    {
+      "chiave": "MONCADA",
+      "nome": "TEST SUPERCOPPA MONCADA",
+      "descrizione": "Badge assegnato alle squadre che hanno partecipato al test della Supercoppa Moncada.",
+      "iconaSvgPath": "svg/moncada.svg",
+      "colorePrimarioHex": "#fbbf24",
+      "coloreSecondarioHex": "#111827"
+    },
+    {
+      "chiave": "MONCADAORO",
+      "nome": "MONCADAORO",
+      "descrizione": "Badge speciale assegnato alla squadra che ha vinto l'edizione di prova della Supercoppa Moncada.",
+      "iconaSvgPath": "svg/moncada_oro.svg",
+      "colorePrimarioHex": "#f59e0b",
+      "coloreSecondarioHex": "#111827"
+    }
+  ]
+}
+
+

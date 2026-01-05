@@ -1,0 +1,205 @@
+{
+  "seasons": [
+    {
+      "id": "2021-22",
+      "nome": "2021/22",
+      "edizioni": [
+        {
+          "competizioneKey": "apertura",
+          "risultati": {
+            "primo": ["team-chili"],
+            "secondo": ["paccianese"],
+            "terzo": ["hapoel-rainbows"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "clausura",
+          "risultati": {
+            "primo": ["team-chili"],
+            "secondo": ["paccianese"],
+            "terzo": ["piaseinsa"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        }        
+      ]
+    },
+    {
+      "id": "2022-23",
+      "nome": "2022/23",
+      "edizioni": [
+        {
+          "competizioneKey": "apertura",
+          "risultati": {
+            "primo": ["scialche-104"],
+            "secondo": ["zyklon-boys"],
+            "terzo": ["piaseinsa"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "clausura",
+          "risultati": {
+            "primo": ["dinamo-trast"],
+            "secondo": ["cringester-united"],
+            "terzo": ["zyklon-boys", "al-drow"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "memorial",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["team-chili"],
+            "finalista": ["piaseinsa"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        }
+      ]
+    },
+    {
+      "id": "2023-24",
+      "nome": "2023/24",
+      "edizioni": [
+        {
+          "competizioneKey": "campionato",
+          "risultati": {
+            "primo": ["dinamo-trast"],
+            "secondo": ["al-drow"],
+            "terzo": ["hapoel-rainbows"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "memorial",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["pisneloteam"],
+            "finalista": ["paccianese"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "latrina",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["kimbocats"],
+            "finalista": ["cringester-united"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        }
+      ]
+    },
+    {
+      "id": "2024-25",
+      "nome": "2024/25",
+      "edizioni": [
+        {
+          "competizioneKey": "campionato",
+          "risultati": {
+            "primo": ["dinamo-trast"],
+            "secondo": ["cringester-united"],
+            "terzo": ["al-drow"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [
+            { "posizione": 1, "squadraId": "dinamo-trast", "punti": 68, "giocate": 33, "vinte": 21, "pareggiate": 5, "perse": 7, "golFatti": 67, "golSubiti": 45 },
+            { "posizione": 2, "squadraId": "cringester-united", "punti": 62, "giocate": 33, "vinte": 18, "pareggiate": 8, "perse": 7, "golFatti": 58, "golSubiti": 35 },
+            { "posizione": 3, "squadraId": "al-drow", "punti": 53, "giocate": 33, "vinte": 14, "pareggiate": 11, "perse": 8, "golFatti": 49, "golSubiti": 39 },
+            { "posizione": 4, "squadraId": "hapoel-rainbows", "punti": 51, "giocate": 33, "vinte": 14, "pareggiate": 9, "perse": 10, "golFatti": 54, "golSubiti": 51 },
+            { "posizione": 5, "squadraId": "ss-ungern-khancheri", "punti": 50, "giocate": 33, "vinte": 13, "pareggiate": 11, "perse": 9, "golFatti": 52, "golSubiti": 50 },
+            { "posizione": 6, "squadraId": "magisterauschwitz", "punti": 47, "giocate": 33, "vinte": 13, "pareggiate": 8, "perse": 12, "golFatti": 49, "golSubiti": 46 },
+            { "posizione": 7, "squadraId": "zyklon-boys", "punti": 46, "giocate": 33, "vinte": 12, "pareggiate": 10, "perse": 11, "golFatti": 45, "golSubiti": 47 },
+            { "posizione": 8, "squadraId": "pisneloteam", "punti": 37, "giocate": 33, "vinte": 9, "pareggiate": 10, "perse": 14, "golFatti": 50, "golSubiti": 49 },
+            { "posizione": 9, "squadraId": "fernanasport", "punti": 36, "giocate": 33, "vinte": 8, "pareggiate": 12, "perse": 13, "golFatti": 38, "golSubiti": 50 },
+            { "posizione": 10, "squadraId": "fc-astana", "punti": 31, "giocate": 33, "vinte": 9, "pareggiate": 4, "perse": 20, "golFatti": 34, "golSubiti": 50 },
+            { "posizione": 11, "squadraId": "uganda-brics", "punti": 31, "giocate": 33, "vinte": 7, "pareggiate": 10, "perse": 16, "golFatti": 34, "golSubiti": 50 },
+            { "posizione": 12, "squadraId": "kimbocats", "punti": 27, "giocate": 33, "vinte": 5, "pareggiate": 12, "perse": 16, "golFatti": 42, "golSubiti": 60 }
+          ],
+          "immagineClassificaPath": "standings/2024-25_campionato.png"
+        },
+        {
+          "competizioneKey": "memorial",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["dinamo-trast"],
+            "finalista": ["hapoel-rainbows"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": "standings/2024-25_memorial.JPG"
+        },
+        {
+          "competizioneKey": "latrina",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["pisneloteam"],
+            "finalista": ["fc-astana"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": "standings/2024-25_latrina.png"
+        }
+      ]
+    },
+    {
+      "id": "2025-26",
+      "nome": "2025/26",
+      "edizioni": [
+        {
+          "competizioneKey": "latrina",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["pisneloteam"],
+            "finalista": ["cringester-united"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "moncada",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["al-drow"],
+            "finalista": ["uganda-brics"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        }
+      ]
+    }
+  ]
+}
+
+

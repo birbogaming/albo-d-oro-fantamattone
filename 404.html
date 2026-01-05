@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="Albo Fantamattone - Albo d'oro, statistiche e archivio storico del fantacalcio" />
+    <title>Albo Fantamattone</title>
+    <base href="/albo-d-oro-fantamattone/" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/legacy.css" />
+    
+    <link href="manifest.webmanifest" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+    
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme');
+            if (!theme) {
+                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        [data-theme="dark"] {
+            background: #0f172a;
+            color: #f8fafc;
+        }
+        
+        [data-theme="light"] {
+            background: #f5f7fa;
+            color: #1a1f36;
+        }
+        
+        .loading-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 1.5rem;
+        }
+        
+        .loading-logo {
+            font-size: 3rem;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        .loading-text {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            opacity: 0.7;
+        }
+        
+        .loading-bar {
+            width: 200px;
+            height: 4px;
+            background: rgba(128, 128, 128, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .loading-bar-fill {
+            height: 100%;
+            width: 30%;
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            border-radius: 2px;
+            animation: loading 1.2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(400%); }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="loading-screen">
+            <div class="loading-logo">🏆</div>
+            <div class="loading-text">Albo Fantamattone</div>
+            <div class="loading-bar">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        Si è verificato un errore.
+        <a href="" class="reload">Ricarica</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+</body>
+
+</html>
