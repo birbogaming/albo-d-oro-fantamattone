@@ -113,8 +113,35 @@
         <a class="dismiss">🗙</a>
     </div>
     
+    <script>
+        // Gestione del routing per GitHub Pages
+        // Quando GitHub Pages serve questo 404.html, l'URL originale è ancora nella barra degli indirizzi
+        // Salviamo l'URL originale e lo ripristiniamo dopo che Blazor è caricato
+        var originalPath = window.location.pathname;
+        var originalSearch = window.location.search;
+        var originalHash = window.location.hash;
+        
+        // Funzione per ripristinare l'URL originale dopo che Blazor è caricato
+        function restoreUrl() {
+            var currentPath = window.location.pathname;
+            var basePath = '/albo-d-oro-fantamattone/';
+            
+            // Se l'URL corrente è diverso da quello originale, ripristiniamolo
+            if (currentPath !== originalPath) {
+                var fullUrl = originalPath + originalSearch + originalHash;
+                window.history.replaceState(null, '', fullUrl);
+            }
+        }
+        
+        // Ripristina l'URL quando Blazor è pronto
+        window.addEventListener('load', function() {
+            // Aspetta che Blazor sia completamente caricato
+            setTimeout(restoreUrl, 100);
+        });
+    </script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 
 </html>
+
