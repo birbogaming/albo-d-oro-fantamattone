@@ -113,6 +113,27 @@
         <a class="dismiss">🗙</a>
     </div>
     
+    <script>
+        // Gestisce il reindirizzamento da 404.html: se c'è un hash con un percorso, 
+        // ripristina l'URL originale usando history API prima che Blazor si carichi
+        (function() {
+            var basePath = '/albo-d-oro-fantamattone';
+            var hash = window.location.hash;
+            
+            // Se l'hash inizia con /, è un percorso da ripristinare
+            if (hash && hash.startsWith('#/')) {
+                var path = basePath + hash.substring(1); // Rimuovi il # e aggiungi basePath
+                var url = path + window.location.search;
+                
+                // Ripristina l'URL originale senza ricaricare la pagina
+                // Questo permette a Blazor di gestire correttamente il routing
+                if (window.history && window.history.replaceState) {
+                    window.history.replaceState(null, '', url);
+                }
+            }
+        })();
+    </script>
+    
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>

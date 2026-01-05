@@ -12,7 +12,7 @@ const offlineAssetsInclude = [ /\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, 
 const offlineAssetsExclude = [ /^service-worker\.js$/ ];
 
 // Replace with your base path if you are hosting on a subfolder. Ensure there is a trailing '/'.
-const base = "/";
+const base = "/albo-d-oro-fantamattone/";
 const baseUrl = new URL(base, self.origin);
 const manifestUrlList = self.assetsManifest.assets.map(asset => new URL(asset.url, baseUrl).href);
 
@@ -46,9 +46,15 @@ async function onFetch(event) {
         const shouldServeIndexHtml = event.request.mode === 'navigate'
             && !manifestUrlList.some(url => url === event.request.url);
 
-        const request = shouldServeIndexHtml ? 'index.html' : event.request;
+        const request = shouldServeIndexHtml ? new Request(base + 'index.html', event.request) : event.request;
         const cache = await caches.open(cacheName);
         cachedResponse = await cache.match(request);
+        
+        // Se è una richiesta di navigazione e non abbiamo trovato la cache, prova a servire index.html
+        if (!cachedResponse && shouldServeIndexHtml) {
+            const indexRequest = new Request(base + 'index.html');
+            cachedResponse = await cache.match(indexRequest);
+        }
     }
 
     return cachedResponse || fetch(event.request);

@@ -114,15 +114,31 @@
     </div>
     
     <script>
-        // Reindirizza tutte le richieste 404 a index.html mantenendo il percorso
-        var basePath = '/albo-d-oro-fantamattone';
-        var path = window.location.pathname;
-        
-        // Se il percorso non è già index.html, reindirizza
-        if (path !== basePath + '/index.html' && path !== basePath + '/') {
-            var newPath = basePath + '/index.html' + window.location.search + window.location.hash;
-            window.location.replace(newPath);
-        }
+        // Reindirizza immediatamente tutte le richieste 404 a index.html mantenendo il percorso
+        // Questo script deve essere eseguito PRIMA di caricare Blazor
+        (function() {
+            var basePath = '/albo-d-oro-fantamattone';
+            var path = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            
+            // Se il percorso non è già index.html o root, reindirizza
+            if (path !== basePath + '/index.html' && path !== basePath + '/') {
+                // Estrai il percorso relativo (rimuovi basePath)
+                var relativePath = path.replace(basePath, '') || '/';
+                
+                // Se non c'è già un hash, usa il percorso originale come hash
+                // Blazor gestirà il routing basato sull'hash se configurato, altrimenti useremo history API
+                var redirectUrl = basePath + '/index.html' + search;
+                if (!hash && relativePath !== '/') {
+                    redirectUrl += '#' + relativePath;
+                } else if (hash) {
+                    redirectUrl += hash;
+                }
+                
+                window.location.replace(redirectUrl);
+            }
+        })();
     </script>
     
     <script src="_framework/blazor.webassembly.js"></script>
