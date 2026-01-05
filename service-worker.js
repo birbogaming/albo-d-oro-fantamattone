@@ -23,11 +23,7 @@ async function onInstall(event) {
     const assetsRequests = self.assetsManifest.assets
         .filter(asset => offlineAssetsInclude.some(pattern => pattern.test(asset.url)))
         .filter(asset => !offlineAssetsExclude.some(pattern => pattern.test(asset.url)))
-        .map(asset => {
-            // Costruisci l'URL completo usando il base path
-            const fullUrl = new URL(asset.url, baseUrl).href;
-            return new Request(fullUrl, { integrity: asset.hash, cache: 'no-cache' });
-        });
+        .map(asset => new Request(asset.url, { integrity: asset.hash, cache: 'no-cache' }));
     await caches.open(cacheName).then(cache => cache.addAll(assetsRequests));
 }
 
@@ -50,17 +46,11 @@ async function onFetch(event) {
         const shouldServeIndexHtml = event.request.mode === 'navigate'
             && !manifestUrlList.some(url => url === event.request.url);
 
-        const request = shouldServeIndexHtml ? new Request(base + 'index.html', event.request) : event.request;
+        const request = shouldServeIndexHtml ? new Request(new URL('index.html', baseUrl).href) : event.request;
         const cache = await caches.open(cacheName);
         cachedResponse = await cache.match(request);
-        
-        // Se è una richiesta di navigazione e non abbiamo trovato la cache, prova a servire index.html
-        if (!cachedResponse && shouldServeIndexHtml) {
-            const indexRequest = new Request(base + 'index.html');
-            cachedResponse = await cache.match(indexRequest);
-        }
     }
 
     return cachedResponse || fetch(event.request);
 }
-/* Manifest version: 8UhoZ1rn */
+/* Manifest version: ATB/lSS8 */

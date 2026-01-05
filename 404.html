@@ -114,44 +114,31 @@
     </div>
     
     <script>
-        // Reindirizza immediatamente tutte le richieste 404 a index.html mantenendo il percorso
-        // Questo script deve essere eseguito PRIMA di caricare Blazor
-        (function() {
-            var basePath = '/albo-d-oro-fantamattone';
-            var path = window.location.pathname;
-            var search = window.location.search;
-            var hash = window.location.hash;
+        // Gestione del routing per GitHub Pages
+        // Quando GitHub Pages serve questo 404.html, l'URL originale è ancora nella barra degli indirizzi
+        // Salviamo l'URL originale e lo ripristiniamo dopo che Blazor è caricato
+        var originalPath = window.location.pathname;
+        var originalSearch = window.location.search;
+        var originalHash = window.location.hash;
+        
+        // Funzione per ripristinare l'URL originale dopo che Blazor è caricato
+        function restoreUrl() {
+            var currentPath = window.location.pathname;
+            var basePath = '/albo-d-oro-fantamattone/';
             
-            // Se il percorso non inizia con basePath, aggiungilo
-            if (!path.startsWith(basePath)) {
-                // Se il percorso è root o vuoto, reindirizza al basePath
-                if (path === '/' || path === '') {
-                    window.location.replace(basePath + '/' + search + hash);
-                    return;
-                }
-                // Altrimenti aggiungi basePath al percorso
-                path = basePath + path;
+            // Se l'URL corrente è diverso da quello originale, ripristiniamolo
+            if (currentPath !== originalPath) {
+                var fullUrl = originalPath + originalSearch + originalHash;
+                window.history.replaceState(null, '', fullUrl);
             }
-            
-            // Se il percorso non è già index.html o root del basePath, reindirizza
-            if (path !== basePath + '/index.html' && path !== basePath + '/') {
-                // Estrai il percorso relativo (rimuovi basePath)
-                var relativePath = path.replace(basePath, '') || '/';
-                
-                // Se non c'è già un hash, usa il percorso originale come hash
-                // Blazor gestirà il routing basato sull'hash se configurato, altrimenti useremo history API
-                var redirectUrl = basePath + '/index.html' + search;
-                if (!hash && relativePath !== '/') {
-                    redirectUrl += '#' + relativePath;
-                } else if (hash) {
-                    redirectUrl += hash;
-                }
-                
-                window.location.replace(redirectUrl);
-            }
-        })();
+        }
+        
+        // Ripristina l'URL quando Blazor è pronto
+        window.addEventListener('load', function() {
+            // Aspetta che Blazor sia completamente caricato
+            setTimeout(restoreUrl, 100);
+        });
     </script>
-    
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>

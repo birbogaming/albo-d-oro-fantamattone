@@ -165,11 +165,11 @@
       "url": "_framework\/System.Text.RegularExpressions.wasm"
     },
     {
-      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "hash": "sha256-Nqnn8clbgv+5l0PgxcTOldg8mkMKrFn4TvPL+rYUUGg=",
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-Cjy+yeZ8GsVjV1VqlSDB78s\/Ocf8B2iJWU9HHptrrZw=",
+      "hash": "sha256-lN14Tro\/67cTY82fb2Os5IvZFJL+J17ZsT4G4UYBs3g=",
       "url": "404.html"
     },
     {
@@ -345,5 +345,5 @@
       "url": "svg\/uganda.svg"
     }
   ],
-  "version": "8UhoZ1rn"
+  "version": "ATB\/lSS8"
 };
