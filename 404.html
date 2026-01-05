@@ -113,6 +113,18 @@
         <a class="dismiss">🗙</a>
     </div>
     
+    <script>
+        // Reindirizza tutte le richieste 404 a index.html mantenendo il percorso
+        var basePath = '/albo-d-oro-fantamattone';
+        var path = window.location.pathname;
+        
+        // Se il percorso non è già index.html, reindirizza
+        if (path !== basePath + '/index.html' && path !== basePath + '/') {
+            var newPath = basePath + '/index.html' + window.location.search + window.location.hash;
+            window.location.replace(newPath);
+        }
+    </script>
+    
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
