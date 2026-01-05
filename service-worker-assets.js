@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-z1LpPbp3BsRIWZjZlwuGXYc\/eRGZwhtPqw4BuW5VfaY=",
+      "hash": "sha256-oPsMzxGprs3DnxcGYHcCNTomuRldp0h4o4B5Xel+iqo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-4ZXdcAAqidvPjIf17CtKcxLJF+8jvcYM4aRsX0r7Flc=",
+      "hash": "sha256-k3WctBf4Dva6cjCYa7cWYd5wjz4G6ml1Ug2wWVCAUtI=",
       "url": "_framework\/AlboFantamattoneBlazor.wasm"
     },
     {
@@ -345,5 +345,5 @@
       "url": "svg\/uganda.svg"
     }
   ],
-  "version": "ATB\/lSS8"
+  "version": "SSqr3TcD"
 };

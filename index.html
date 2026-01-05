@@ -7,23 +7,11 @@
     <meta name="theme-color" content="#0f172a" />
     <meta name="description" content="Albo Fantamattone - Albo d'oro, statistiche e archivio storico del fantacalcio" />
     <title>Albo Fantamattone</title>
-
-    <script type="text/javascript">
-        (function(l) {
-            if (l.search[1] === '/' ) {
-                var decoded = l.search.slice(1).split('&').map(function(s) { 
-                    return s.replace(/~and~/g, '&')
-                }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, l.pathname.lastIndexOf('/')) + decoded + l.hash
-                );
-            }
-        }(window.location));
-    </script>
     <base href="/albo-d-oro-fantamattone/" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/app.css" />
@@ -41,26 +29,6 @@
                 theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
             }
             document.documentElement.setAttribute('data-theme', theme);
-        })();
-    </script>
-    
-    <script>
-        // Verifica e corregge l'URL se non include il base path
-        (function() {
-            var basePath = '/albo-d-oro-fantamattone';
-            var currentPath = window.location.pathname;
-            
-            // Se il percorso non inizia con il base path, reindirizza
-            if (!currentPath.startsWith(basePath)) {
-                // Se siamo alla root, reindirizza al base path
-                if (currentPath === '/' || currentPath === '') {
-                    window.location.replace(basePath + '/' + window.location.search + window.location.hash);
-                    return;
-                }
-                // Altrimenti aggiungi il base path al percorso corrente
-                var newPath = basePath + currentPath;
-                window.location.replace(newPath + window.location.search + window.location.hash);
-            }
         })();
     </script>
     
@@ -144,44 +112,6 @@
         <a href="" class="reload">Ricarica</a>
         <a class="dismiss">🗙</a>
     </div>
-    
-    <script>
-        // Intercetta tutti i link per assicurarsi che usino il base path
-        (function() {
-            var basePath = '/albo-d-oro-fantamattone';
-            
-            // Funzione per correggere gli URL
-            function fixUrl(url) {
-                // Se l'URL è assoluto e non include il base path, aggiungilo
-                if (url.startsWith('/') && !url.startsWith(basePath)) {
-                    // Se inizia con / ma non è il base path, potrebbe essere una route
-                    // Verifica se è una route valida (non un file)
-                    if (!url.match(/\.(html|css|js|png|jpg|jpeg|gif|svg|ico|json|wasm|dll|pdb)$/i)) {
-                        return basePath + url;
-                    }
-                }
-                return url;
-            }
-            
-            // Intercetta i click sui link dopo che il DOM è caricato
-            document.addEventListener('DOMContentLoaded', function() {
-                document.addEventListener('click', function(e) {
-                    var link = e.target.closest('a');
-                    if (link && link.href) {
-                        var url = new URL(link.href, window.location.origin);
-                        // Se l'URL è dello stesso dominio ma non include il base path, correggilo
-                        if (url.origin === window.location.origin && !url.pathname.startsWith(basePath)) {
-                            var fixedPath = fixUrl(url.pathname);
-                            if (fixedPath !== url.pathname) {
-                                e.preventDefault();
-                                window.location.href = fixedPath + url.search + url.hash;
-                            }
-                        }
-                    }
-                }, true);
-            });
-        })();
-    </script>
     
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
