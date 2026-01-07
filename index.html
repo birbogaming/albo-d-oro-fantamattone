@@ -31,14 +31,14 @@
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
-    
+
     <script>
         // Reindirizza immediatamente se l'URL non include il base path
         (function() {
             var basePath = '/albo-d-oro-fantamattone';
             var currentPath = window.location.pathname;
             var hostname = window.location.hostname;
-            
+
             // Se siamo su birbogaming.github.io e il path non inizia con basePath
             if (hostname === 'birbogaming.github.io' && !currentPath.startsWith(basePath)) {
                 // Se siamo alla root, reindirizza al base path
@@ -133,26 +133,26 @@
         <a href="" class="reload">Ricarica</a>
         <a class="dismiss">🗙</a>
     </div>
-    
+
     <script>
         // Intercetta tutti i link per assicurarsi che usino il base path
         (function() {
             var basePath = '/albo-d-oro-fantamattone';
             var hostname = window.location.hostname;
-            
+
             function fixLink(link) {
                 if (!link || !link.href) return;
-                
+
                 try {
                     var url = new URL(link.href, window.location.origin);
-                    
+
                     // Se l'URL è dello stesso dominio ma non include il base path
-                    if (url.origin === window.location.origin && 
-                        hostname === 'birbogaming.github.io' && 
+                    if (url.origin === window.location.origin &&
+                        hostname === 'birbogaming.github.io' &&
                         !url.pathname.startsWith(basePath) &&
                         url.pathname !== '/' &&
                         url.pathname !== '') {
-                        
+
                         // Aggiungi il base path
                         var newPath = basePath + url.pathname;
                         link.href = newPath + url.search + url.hash;
@@ -161,7 +161,7 @@
                     // Ignora errori di parsing URL
                 }
             }
-            
+
             // Intercetta i click sui link
             document.addEventListener('click', function(e) {
                 var link = e.target.closest('a');
@@ -169,7 +169,7 @@
                     fixLink(link);
                 }
             }, true);
-            
+
             // Corregge tutti i link esistenti quando il DOM è pronto
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', function() {
@@ -180,7 +180,7 @@
             }
         })();
     </script>
-    
+
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>

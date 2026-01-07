@@ -1,8 +1,3 @@
-/* ========================================
-   ALBO FANTAMATTONE - DESIGN SYSTEM
-   Versione professionale, responsiva
-   ======================================== */
-
 /* === VARIABILI - TEMA CHIARO === */
 :root,
 [data-theme="light"] {
@@ -418,6 +413,22 @@ a:hover {
   width: 2.5rem;
   height: 2.5rem;
   border-width: 2px;
+}
+
+.logo-custom {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.logo-custom.small {
+  width: 3rem;
+  height: 3rem;
+  padding: 2px;
 }
 
 .team-logo,
@@ -1163,6 +1174,17 @@ a:hover {
   font-size: 0.9375rem;
   color: var(--text-muted);
   font-style: italic;
+}
+
+/* === TEAM STORIA === */
+.team-storia {
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
 }
 
 /* === STAFF GRID === */

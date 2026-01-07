@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-oPsMzxGprs3DnxcGYHcCNTomuRldp0h4o4B5Xel+iqo=",
+      "hash": "sha256-kLAc\/Ml4puJBIg0L35FaLXoYi+8MN4uW\/ii19dsHBUI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-k3WctBf4Dva6cjCYa7cWYd5wjz4G6ml1Ug2wWVCAUtI=",
+      "hash": "sha256-pgipylC9Hph5Ns9BZ6F7NvrCiH+N1h0HwG4aEH0eJt8=",
       "url": "_framework\/AlboFantamattoneBlazor.wasm"
     },
     {
@@ -149,7 +149,7 @@
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm"
     },
     {
-      "hash": "sha256-teMF6OkhjPxJvvwKHX7wsLfC9N6pMEsezRUbor7\/6M0=",
+      "hash": "sha256-hIawYzeC4JqcUz+aSJvcd48ttWOzkZzRFucl8edcyo0=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -177,7 +177,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-j92gDImZSOGpeKQwJGQou4VyjdSiWIkLUw5iVI9ryho=",
+      "hash": "sha256-meIFUhOOi8Y40yGeSBnajPiKBDg2R3RPgOFJzRO6w0s=",
       "url": "css\/legacy.css"
     },
     {
@@ -201,7 +201,7 @@
       "url": "data\/v2\/seasons.json"
     },
     {
-      "hash": "sha256-9Llaea9s0wDkQe4spj\/SCgABdWbyAIBLqST0QNMMjYA=",
+      "hash": "sha256-\/QOBUIzzE091o+uwaL7kzbY0jxHvsWmvSCBvtxJk0nI=",
       "url": "data\/v2\/teams.json"
     },
     {
@@ -213,12 +213,32 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-W1G3shO0ARgQdsJOxQ\/DbxJ+KcsRBCjKI5d7SnFnh+M=",
+      "hash": "sha256-VRyxYbpJeELLKvPqSHXwMvomSakYWRdCG6b+CF2yUqs=",
       "url": "index.html"
     },
     {
       "hash": "sha256-U5AjwJYMt\/oiKu9XZq1rEa\/8xui5l03qiolfzQyaMU0=",
       "url": "manifest.webmanifest"
+    },
+    {
+      "hash": "sha256-HC2Gvt5Uty5\/B2lfMe4RBrh4HrjTu9XcWgyY8ift7JU=",
+      "url": "photos\/barone-nero.jpg"
+    },
+    {
+      "hash": "sha256-g\/\/FDnnCvjygmK2FnLB6+h\/JlWKwe5T1HlkGFYkGL8g=",
+      "url": "photos\/castillo.jpg"
+    },
+    {
+      "hash": "sha256-SPxh3mZ\/BH5tF2aD+sqj2m+sMGMLr5Z74LQPnssakrk=",
+      "url": "photos\/donald-j-trump.jpg"
+    },
+    {
+      "hash": "sha256-c3WVgupOl\/oMYNdSBLUgpRUJB2K3Cy8wHN+408gdGE0=",
+      "url": "photos\/hassan-black.jpg"
+    },
+    {
+      "hash": "sha256-NplxGirpYqYVjv8YzPsCum8V8NwSolaW+6bqeIcUnhY=",
+      "url": "photos\/peepoli.JPG"
     },
     {
       "hash": "sha256-ftY26euBVjunLenGs2kdsd091+CXnx8UylKoG2j4mTs=",
@@ -239,6 +259,10 @@
     {
       "hash": "sha256-15AYDkJralBW++pP3q0hD9LHm3TtMsA90m9n5guOLQU=",
       "url": "svg\/100.svg"
+    },
+    {
+      "hash": "sha256-sOlzHgfMBS9WW3mT3kJDxGfq7YQHiYARd5rrMZzMhGg=",
+      "url": "svg\/al-drow.svg"
     },
     {
       "hash": "sha256-X95W2Up3\/Unbh97SX7VaAgsHOjFDvxJq5F7eWet3OJA=",
@@ -285,6 +309,10 @@
       "url": "svg\/finalistasupercoppamoncada.svg"
     },
     {
+      "hash": "sha256-vS8Occ1tt5mIvc55oEexzcsDXg4v1TY3yxLSEmlmBZE=",
+      "url": "svg\/hapoel_rainbows.svg"
+    },
+    {
       "hash": "sha256-M25xRgTPQJdSN7Qm0Et\/cvdzxN9IuzVSmR7Xs\/jPkx4=",
       "url": "svg\/kimbocats.svg"
     },
@@ -317,6 +345,10 @@
       "url": "svg\/og.svg"
     },
     {
+      "hash": "sha256-DyuWD7rlNYIm1Y0uJnxtKhI9d6benSDYvOlZcchNIsg=",
+      "url": "svg\/pisneloteam.svg"
+    },
+    {
       "hash": "sha256-n5GGdw+dSbCKG6aS1QnQ577XOF8e\/FylkFit8yRuXag=",
       "url": "svg\/scudetto.svg"
     },
@@ -345,5 +377,5 @@
       "url": "svg\/uganda.svg"
     }
   ],
-  "version": "SSqr3TcD"
+  "version": "4bx7wv8w"
 };
