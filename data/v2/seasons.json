@@ -13,8 +13,14 @@
             "vincitore": [],
             "finalista": []
           },
-          "classifica": [],
-          "immagineClassificaPath": ""
+          "classifica": [
+            { "posizione": 1, "squadraId": "team-chili", "punti": 175, "giocate": 85, "vinte": 54, "pareggiate": 13, "perse": 18 },
+            { "posizione": 2, "squadraId": "paccianese", "punti": 171, "giocate": 85, "vinte": 55, "pareggiate": 6, "perse": 24 },
+            { "posizione": 3, "squadraId": "hapoel-rainbows", "punti": 132, "giocate": 85, "vinte": 40, "pareggiate": 12, "perse": 33 },
+            { "posizione": 4, "squadraId": "dinamo-trast", "punti": 116, "giocate": 85, "vinte": 33, "pareggiate": 17, "perse": 35 },
+            { "posizione": 5, "squadraId": "dinamo-kabul", "punti": 108, "giocate": 85, "vinte": 31, "pareggiate": 16, "perse": 38 },
+            { "posizione": 6, "squadraId": "brickmingam", "punti": 16, "giocate": 85, "vinte": 0, "pareggiate": 20, "perse": 65 }
+          ]
         },
         {
           "competizioneKey": "clausura",
@@ -25,8 +31,16 @@
             "vincitore": [],
             "finalista": []
           },
-          "classifica": [],
-          "immagineClassificaPath": ""
+          "classifica": [
+            { "posizione": 1, "squadraId": "team-chili", "punti": 28, "giocate": 14, "vinte": 8, "pareggiate": 4, "perse": 2, "golFatti": 34, "golSubiti": 26 },
+            { "posizione": 2, "squadraId": "paccianese", "punti": 26, "giocate": 14, "vinte": 7, "pareggiate": 5, "perse": 2, "golFatti": 44, "golSubiti": 26 },
+            { "posizione": 3, "squadraId": "piaseinsa", "punti": 25, "giocate": 14, "vinte": 7, "pareggiate": 4, "perse": 3, "golFatti": 37, "golSubiti": 23 },
+            { "posizione": 4, "squadraId": "hapoel-rainbows", "punti": 25, "giocate": 14, "vinte": 8, "pareggiate": 1, "perse": 5, "golFatti": 23, "golSubiti": 27 },
+            { "posizione": 5, "squadraId": "dinamo-trast", "punti": 22, "giocate": 14, "vinte": 7, "pareggiate": 1, "perse": 6, "golFatti": 35, "golSubiti": 27 },
+            { "posizione": 6, "squadraId": "cringester-united", "punti": 18, "giocate": 14, "vinte": 6, "pareggiate": 0, "perse": 8, "golFatti": 35, "golSubiti": 37 },
+            { "posizione": 7, "squadraId": "fernanasport", "punti": 10, "giocate": 14, "vinte": 2, "pareggiate": 4, "perse": 8, "golFatti": 13, "golSubiti": 26 },
+            { "posizione": 8, "squadraId": "dinamo-kabul", "punti": 3, "giocate": 14, "vinte": 0, "pareggiate": 3, "perse": 11, "golFatti": 5, "golSubiti": 34 }
+          ]
         }        
       ]
     },
@@ -43,8 +57,20 @@
             "vincitore": [],
             "finalista": []
           },
-          "classifica": [],
-          "immagineClassificaPath": ""
+          "classifica": [
+    { "posizione": 1, "squadraId": "scialche-104", "punti": 330, "giocate": 165, "vinte": 98, "pareggiate": 36, "perse": 31},
+    { "posizione": 2, "squadraId": "zyklon-boys", "punti": 315, "giocate": 165, "vinte": 94, "pareggiate": 33, "perse": 38 },
+    { "posizione": 3, "squadraId": "piaseinsa", "punti": 284, "giocate": 165, "vinte": 80, "pareggiate": 44, "perse": 41},
+    { "posizione": 4, "squadraId": "team-chili", "punti": 245, "giocate": 165, "vinte": 71, "pareggiate": 32, "perse": 62 },
+    { "posizione": 5, "squadraId": "cringester-united", "punti": 219, "giocate": 165, "vinte": 60, "pareggiate": 39, "perse": 66 },
+    { "posizione": 6, "squadraId": "dinamo-trast", "punti": 218, "giocate": 165, "vinte": 57, "pareggiate": 47, "perse": 61 },
+    { "posizione": 7, "squadraId": "fernanasport", "punti": 214, "giocate": 165, "vinte": 59, "pareggiate": 37, "perse": 69 },
+    { "posizione": 8, "squadraId": "al-drow", "punti": 213, "giocate": 165, "vinte": 62, "pareggiate": 27, "perse": 76 },
+    { "posizione": 9, "squadraId": "uganda-brics", "punti": 193, "giocate": 165, "vinte": 51, "pareggiate": 40, "perse": 74 },
+    { "posizione": 10, "squadraId": "hapoel-rainbows", "punti": 190, "giocate": 165, "vinte": 47, "pareggiate": 49, "perse": 69 },
+    { "posizione": 11, "squadraId": "schalke-88", "punti": 169, "giocate": 165, "vinte": 41, "pareggiate": 46, "perse": 78 },
+    { "posizione": 12, "squadraId": "paccianese", "punti": 142, "giocate": 165, "vinte": 32, "pareggiate": 46, "perse": 87 }
+  ]
         },
         {
           "competizioneKey": "clausura",
@@ -85,8 +111,20 @@
             "vincitore": [],
             "finalista": []
           },
-          "classifica": [],
-          "immagineClassificaPath": ""
+          "classifica": [
+            { "posizione": 1, "squadraId": "dinamo-trast", "punti": 62, "giocate": 33, "vinte": 19, "pareggiate": 5, "perse": 9, "golFatti": 59, "golSubiti": 39 },
+            { "posizione": 2, "squadraId": "al-drow", "punti": 59, "giocate": 33, "vinte": 18, "pareggiate": 5, "perse": 10, "golFatti": 60, "golSubiti": 43 },
+            { "posizione": 3, "squadraId": "hapoel-rainbows", "punti": 55, "giocate": 33, "vinte": 15, "pareggiate": 10, "perse": 8, "golFatti": 48, "golSubiti": 38 },
+            { "posizione": 4, "squadraId": "scialche-104", "punti": 46, "giocate": 33, "vinte": 13, "pareggiate": 7, "perse": 13, "golFatti": 51, "golSubiti": 48 },
+            { "posizione": 5, "squadraId": "magisterauschwitz", "punti": 46, "giocate": 33, "vinte": 11, "pareggiate": 13, "perse": 9, "golFatti": 43, "golSubiti": 38 },
+            { "posizione": 6, "squadraId": "uganda-brics", "punti": 46, "giocate": 33, "vinte": 12, "pareggiate": 10, "perse": 11, "golFatti": 40, "golSubiti": 44 },
+            { "posizione": 7, "squadraId": "paccianese", "punti": 45, "giocate": 33, "vinte": 12, "pareggiate": 9, "perse": 12, "golFatti": 52, "golSubiti": 49 },
+            { "posizione": 8, "squadraId": "ss-legio-sizziana", "punti": 44, "giocate": 33, "vinte": 12, "pareggiate": 8, "perse": 13, "golFatti": 26, "golSubiti": 26 },
+            { "posizione": 9, "squadraId": "cringester-united", "punti": 40, "giocate": 33, "vinte": 11, "pareggiate": 7, "perse": 15, "golFatti": 54, "golSubiti": 56 },
+            { "posizione": 10, "squadraId": "zyklon-boys", "punti": 39, "giocate": 33, "vinte": 12, "pareggiate": 3, "perse": 18, "golFatti": 32, "golSubiti": 44 },
+            { "posizione": 11, "squadraId": "pisneloteam", "punti": 36, "giocate": 33, "vinte": 9, "pareggiate": 9, "perse": 15, "golFatti": 39, "golSubiti": 52 },
+            { "posizione": 12, "squadraId": "schalke-88", "punti": 29, "giocate": 33, "vinte": 7, "pareggiate": 8, "perse": 18, "golFatti": 27, "golSubiti": 54 }
+          ]
         },
         {
           "competizioneKey": "memorial",
@@ -140,8 +178,7 @@
             { "posizione": 10, "squadraId": "fc-astana", "punti": 31, "giocate": 33, "vinte": 9, "pareggiate": 4, "perse": 20, "golFatti": 34, "golSubiti": 50 },
             { "posizione": 11, "squadraId": "uganda-brics", "punti": 31, "giocate": 33, "vinte": 7, "pareggiate": 10, "perse": 16, "golFatti": 34, "golSubiti": 50 },
             { "posizione": 12, "squadraId": "kimbocats", "punti": 27, "giocate": 33, "vinte": 5, "pareggiate": 12, "perse": 16, "golFatti": 42, "golSubiti": 60 }
-          ],
-          "immagineClassificaPath": "standings/2024-25_campionato.png"
+          ]
         },
         {
           "competizioneKey": "memorial",
@@ -186,6 +223,18 @@
           "immagineClassificaPath": ""
         },
         {
+          "competizioneKey": "memorial",
+          "risultati": {
+            "primo": [],
+            "secondo": [],
+            "terzo": [],
+            "vincitore": ["uganda-brics"],
+            "finalista": ["magisterauschwitz"]
+          },
+          "classifica": [],
+          "immagineClassificaPath": ""
+        },
+        {
           "competizioneKey": "moncada",
           "risultati": {
             "primo": [],
@@ -196,6 +245,30 @@
           },
           "classifica": [],
           "immagineClassificaPath": ""
+        },
+        {
+          "competizioneKey": "campionato",
+          "risultati": {
+            "primo": ["al-drow"],
+            "secondo": ["ss-ungern-khancheri"],
+            "terzo": ["dinamo-trast"],
+            "vincitore": [],
+            "finalista": []
+          },
+          "classifica": [
+            { "posizione": 1, "squadraId": "al-drow", "punti": 62, "giocate": 33, "vinte": 19, "pareggiate": 5, "perse": 9, "golFatti": 61, "golSubiti": 43 },
+            { "posizione": 2, "squadraId": "ss-ungern-khancheri", "punti": 61, "giocate": 33, "vinte": 18, "pareggiate": 7, "perse": 8, "golFatti": 61, "golSubiti": 43 },
+            { "posizione": 3, "squadraId": "dinamo-trast", "punti": 58, "giocate": 33, "vinte": 17, "pareggiate": 7, "perse": 9, "golFatti": 45, "golSubiti": 30 },
+            { "posizione": 4, "squadraId": "pisneloteam", "punti": 53, "giocate": 33, "vinte": 14, "pareggiate": 11, "perse": 8, "golFatti": 50, "golSubiti": 43 },
+            { "posizione": 5, "squadraId": "kimbocats", "punti": 53, "giocate": 33, "vinte": 14, "pareggiate": 11, "perse": 8, "golFatti": 42, "golSubiti": 32 },
+            { "posizione": 6, "squadraId": "magisterauschwitz", "punti": 49, "giocate": 33, "vinte": 14, "pareggiate": 7, "perse": 12, "golFatti": 49, "golSubiti": 40 },
+            { "posizione": 7, "squadraId": "cringester-united", "punti": 46, "giocate": 33, "vinte": 14, "pareggiate": 4, "perse": 15, "golFatti": 46, "golSubiti": 49 },
+            { "posizione": 8, "squadraId": "hapoel-rainbows", "punti": 39, "giocate": 33, "vinte": 11, "pareggiate": 6, "perse": 16, "golFatti": 39, "golSubiti": 48 },
+            { "posizione": 9, "squadraId": "uganda-brics", "punti": 38, "giocate": 33, "vinte": 9, "pareggiate": 11, "perse": 13, "golFatti": 45, "golSubiti": 51 },
+            { "posizione": 10, "squadraId": "fc-astana", "punti": 36, "giocate": 33, "vinte": 10, "pareggiate": 6, "perse": 17, "golFatti": 38, "golSubiti": 49 },
+            { "posizione": 11, "squadraId": "zyklon-boys", "punti": 34, "giocate": 33, "vinte": 8, "pareggiate": 10, "perse": 15, "golFatti": 41, "golSubiti": 51 },
+            { "posizione": 12, "squadraId": "fernanasport", "punti": 19, "giocate": 33, "vinte": 4, "pareggiate": 7, "perse": 22, "golFatti": 16, "golSubiti": 54 }
+          ]
         }
       ]
     }
