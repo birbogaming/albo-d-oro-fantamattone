@@ -1,12 +1,7 @@
-/* Manifest version: lW9ADLGY */
-// Caution! Be sure you understand the caveats before publishing an application with
-// offline support. See https://aka.ms/blazor-offline-considerations
-
 // Base path per GitHub Pages
 const base = "/albo-d-oro-fantamattone/";
 const baseUrl = new URL(base, self.location.origin);
 
-// Importa il manifest degli asset (percorso relativo al service worker)
 self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
@@ -21,7 +16,6 @@ const manifestUrlList = self.assetsManifest.assets.map(asset => new URL(asset.ur
 async function onInstall(event) {
     console.info('Service worker: Install');
 
-    // Fetch and cache all matching items from the assets manifest
     const cache = await caches.open(cacheName);
     
     // Gestisci gli errori durante il caching - se una risorsa fallisce, continua con le altre
@@ -30,11 +24,7 @@ async function onInstall(event) {
         .filter(asset => !offlineAssetsExclude.some(pattern => pattern.test(asset.url)))
         .map(async asset => {
             try {
-                // Costruisci l'URL completo con il base path
                 const assetUrl = new URL(asset.url, baseUrl).href;
-                
-                // Per le risorse con integrità SRI, prova prima senza integrità nel service worker
-                // perché il controllo SRI viene fatto dal browser quando carica la risorsa
                 const request = new Request(assetUrl, { cache: 'no-cache' });
                 await cache.add(request);
             } catch (err) {
@@ -58,7 +48,6 @@ async function onInstall(event) {
 async function onActivate(event) {
     console.info('Service worker: Activate');
 
-    // Delete unused caches
     const cacheKeys = await caches.keys();
     await Promise.all(cacheKeys
         .filter(key => key.startsWith(cacheNamePrefix) && key !== cacheName)
@@ -68,9 +57,6 @@ async function onActivate(event) {
 async function onFetch(event) {
     let cachedResponse = null;
     if (event.request.method === 'GET') {
-        // For all navigation requests, try to serve index.html from cache,
-        // unless that request is for an offline resource.
-        // If you need some URLs to be server-rendered, edit the following check to exclude those URLs
         const shouldServeIndexHtml = event.request.mode === 'navigate'
             && !manifestUrlList.some(url => url === event.request.url);
 
